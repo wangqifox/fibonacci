@@ -8,7 +8,7 @@ import (
 
 func Fibonacci(ctx *middleware.Context) {
 	number := ctx.QueryInt("number")
-	result := models.fibonacci(number)
+	result := models.FibonacciSequence(number)
 	if result < 0 {
 		ctx.JSON(422, map[string]string{
 			"error": "Unprocessable number: " + com.ToStr(number),
