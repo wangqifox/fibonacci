@@ -1,9 +1,9 @@
 package v1
 
 import (
-	"github.com/Unknown/com"
-	"github.com/wangqifox/fibonacci/middleware"
+	"github.com/Unknwon/com"
 	"github.com/wangqifox/fibonacci/models"
+	"github.com/wangqifox/fibonacci/modules/middleware"
 )
 
 func Fibonacci(ctx *middleware.Context) {
