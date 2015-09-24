@@ -6,6 +6,7 @@ import (
 	"github.com/wangqifox/fibonacci/modules/middleware"
 	"github.com/wangqifox/fibonacci/modules/setting"
 	"github.com/wangqifox/fibonacci/routers/v1"
+	"net/http"
 )
 
 const APP_VER = "0.0.1.0912"
@@ -18,5 +19,6 @@ func main() {
 
 	m.Get("/fibonacci", v1.Fibonacci)
 
-	m.Run(setting.HTTPPort)
+	http.ListenAndServe(":"+setting.HTTPPort, m)
+	// m.Run(":" + setting.HTTPPort)
 }
