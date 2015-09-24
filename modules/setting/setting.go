@@ -2,10 +2,11 @@ package setting
 
 import (
 	"github.com/Unknwon/log"
+	"os"
 )
 
 var (
-	HTTPPort = 3000
+	HTTPPort = os.Getenv("PORT")
 )
 
 func init() {
