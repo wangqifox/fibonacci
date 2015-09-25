@@ -1,0 +1,23 @@
+{
+	"ImportPath": "github.com/wangqifox/fibonacci",
+	"GoVersion": "go1.5.1",
+	"Deps": [
+		{
+			"ImportPath": "github.com/Unknwon/com",
+			"Rev": "47d7d2b81a44157600669037e11e9ddfbf16745f"
+		},
+		{
+			"ImportPath": "github.com/Unknwon/log",
+			"Rev": "e617c87089d3ff2ae05098eac8c9386069cd8461"
+		},
+		{
+			"ImportPath": "github.com/Unknwon/macaron",
+			"Rev": "05317cffe56845cb9625f1a21257aff0209b7ba9"
+		},
+		{
+			"ImportPath": "gopkg.in/ini.v1",
+			"Comment": "v0-34-ge8c222f",
+			"Rev": "e8c222fea70c6c03bde4f0577c93965e7f91d417"
+		}
+	]
+}

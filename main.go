@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/Unknwon/log"
-	"github.com/Unknwon/macaron"
+	"github.com/wangqifox/fibonacci/Godeps/_workspace/src/github.com/Unknwon/log"
+	"github.com/wangqifox/fibonacci/Godeps/_workspace/src/github.com/Unknwon/macaron"
 	"github.com/wangqifox/fibonacci/modules/middleware"
 	"github.com/wangqifox/fibonacci/modules/setting"
 	"github.com/wangqifox/fibonacci/routers/v1"
@@ -19,6 +19,7 @@ func main() {
 
 	m.Get("/fibonacci", v1.Fibonacci)
 
+	log.Info("PORT: %s", setting.HTTPPort)
 	http.ListenAndServe(":"+setting.HTTPPort, m)
 	// m.Run(":" + setting.HTTPPort)
 }
