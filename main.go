@@ -3,7 +3,6 @@ package main
 import (
 	"github.com/Unknwon/log"
 	"github.com/Unknwon/macaron"
-	// "github.com/wangqifox/fibonacci/modules/middleware"
 	"github.com/wangqifox/fibonacci/modules/setting"
 	"github.com/wangqifox/fibonacci/routers/v1"
 	"net/http"
