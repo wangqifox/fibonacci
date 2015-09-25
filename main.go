@@ -16,6 +16,9 @@ func main() {
 	m.Use(macaron.Renderer())
 	// m.Use(middleware.Contexter())
 
+	m.Get("/", func() string {
+		return "Hello"
+	})
 	m.Get("/fibonacci", v1.Fibonacci)
 
 	log.Info("PORT: %s", setting.HTTPPort)
