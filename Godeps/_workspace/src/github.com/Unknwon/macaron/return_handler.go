@@ -19,7 +19,7 @@ import (
 	"net/http"
 	"reflect"
 
-	"github.com/wangqifox/fibonacci/Godeps/_workspace/src/github.com/Unknwon/macaron/inject"
+	"github.com/Unknwon/macaron/inject"
 )
 
 // ReturnHandler is a service that Martini provides that is called

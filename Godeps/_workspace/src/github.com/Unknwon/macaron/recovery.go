@@ -23,7 +23,7 @@ import (
 	"net/http"
 	"runtime"
 
-	"github.com/wangqifox/fibonacci/Godeps/_workspace/src/github.com/Unknwon/macaron/inject"
+	"github.com/Unknwon/macaron/inject"
 )
 
 const (

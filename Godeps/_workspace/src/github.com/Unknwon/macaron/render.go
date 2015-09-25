@@ -32,7 +32,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wangqifox/fibonacci/Godeps/_workspace/src/github.com/Unknwon/com"
+	"github.com/Unknwon/com"
 )
 
 // BufferPool implements a pool of bytes.Buffers in the form of a bounded channel.

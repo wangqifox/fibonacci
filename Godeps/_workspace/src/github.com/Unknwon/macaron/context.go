@@ -31,9 +31,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wangqifox/fibonacci/Godeps/_workspace/src/github.com/Unknwon/com"
+	"github.com/Unknwon/com"
 
-	"github.com/wangqifox/fibonacci/Godeps/_workspace/src/github.com/Unknwon/macaron/inject"
+	"github.com/Unknwon/macaron/inject"
 )
 
 // Locale reprents a localization interface.

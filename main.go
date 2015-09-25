@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/wangqifox/fibonacci/Godeps/_workspace/src/github.com/Unknwon/log"
-	"github.com/wangqifox/fibonacci/Godeps/_workspace/src/github.com/Unknwon/macaron"
-	"github.com/wangqifox/fibonacci/modules/middleware"
+	"github.com/Unknwon/log"
+	"github.com/Unknwon/macaron"
+	// "github.com/wangqifox/fibonacci/modules/middleware"
 	"github.com/wangqifox/fibonacci/modules/setting"
 	"github.com/wangqifox/fibonacci/routers/v1"
 	"net/http"
@@ -15,7 +15,7 @@ func main() {
 	log.Info("App Version: %s", APP_VER)
 	m := macaron.Classic()
 	m.Use(macaron.Renderer())
-	m.Use(middleware.Contexter())
+	// m.Use(middleware.Contexter())
 
 	m.Get("/fibonacci", v1.Fibonacci)
 

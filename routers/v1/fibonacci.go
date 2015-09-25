@@ -3,11 +3,15 @@ package v1
 import (
 	"github.com/Unknwon/com"
 	"github.com/wangqifox/fibonacci/models"
-	"github.com/wangqifox/fibonacci/modules/middleware"
+	// "github.com/wangqifox/fibonacci/modules/middleware"
+	"github.com/Unknwon/macaron"
+	"log"
 )
 
-func Fibonacci(ctx *middleware.Context) {
+func Fibonacci(ctx *macaron.Context) {
 	number := ctx.QueryInt("number")
+	log.Println("DBG:", number)
+
 	result := models.FibonacciSequence(number)
 	if result < 0 {
 		ctx.JSON(422, map[string]string{

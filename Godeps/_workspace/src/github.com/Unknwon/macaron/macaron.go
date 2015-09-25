@@ -23,10 +23,10 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/wangqifox/fibonacci/Godeps/_workspace/src/github.com/Unknwon/com"
-	"github.com/wangqifox/fibonacci/Godeps/_workspace/src/gopkg.in/ini.v1"
+	"github.com/Unknwon/com"
+	"gopkg.in/ini.v1"
 
-	"github.com/wangqifox/fibonacci/Godeps/_workspace/src/github.com/Unknwon/macaron/inject"
+	"github.com/Unknwon/macaron/inject"
 )
 
 const _VERSION = "0.6.7.0916"

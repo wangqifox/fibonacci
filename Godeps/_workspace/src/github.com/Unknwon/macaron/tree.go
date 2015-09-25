@@ -18,7 +18,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/wangqifox/fibonacci/Godeps/_workspace/src/github.com/Unknwon/com"
+	"github.com/Unknwon/com"
 )
 
 type patternType int8
